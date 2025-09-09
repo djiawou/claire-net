@@ -5,7 +5,7 @@ const About = () => {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="rounded-lg overflow-hidden shadow-2xl">
             <video
-              src="https://videos.pexels.com/video-files/7578356/7578356-hd_1920_1080_25fps.mp4"
+              src="https://videos.pexels.com/video-files/8140322/8140322-hd_1920_1080_25fps.mp4"
               autoPlay
               loop
               muted
