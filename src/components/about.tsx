@@ -1,19 +1,18 @@
-import Image from 'next/image';
-
 const About = () => {
   return (
     <section id="about" className="bg-secondary text-secondary-foreground py-20 sm:py-28">
       <div className="container mx-auto">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="rounded-lg overflow-hidden shadow-2xl">
-            <Image
-              src="https://picsum.photos/800/600"
-              alt="Équipe de nettoyage Clair&Net"
-              width={800}
-              height={600}
-              className="w-full object-cover transition-transform duration-300 hover:scale-105"
-              data-ai-hint="cleaning staff"
-            />
+            <video
+              src="https://videos.pexels.com/video-files/7578356/7578356-hd_1920_1080_25fps.mp4"
+              autoPlay
+              loop
+              muted
+              className="w-full h-full object-cover"
+            >
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
