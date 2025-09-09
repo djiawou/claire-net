@@ -1,19 +1,18 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <section id="about" className="bg-secondary text-secondary-foreground py-20 sm:py-28">
       <div className="container mx-auto">
         <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="rounded-lg overflow-hidden shadow-2xl">
-            <video
-              src="https://videos.pexels.com/video-files/4692257/4692257-hd_1920_1080_25fps.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              Votre navigateur ne supporte pas la balise vidéo.
-            </video>
+          <div className="relative rounded-lg overflow-hidden shadow-2xl h-80 md:h-full">
+            <Image
+              src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1770&auto=format&fit=crop"
+              alt="Équipe de nettoyage professionnelle"
+              fill
+              className="object-cover"
+              data-ai-hint="professional cleaning"
+            />
           </div>
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
