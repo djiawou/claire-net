@@ -21,14 +21,14 @@ const servicesData = [
     icon: <GlassWater className="h-10 w-10 text-primary" />,
     title: 'Lavage de vitres',
     description: 'Des vitres et vitrines impeccables pour une première impression parfaite.',
-    image: 'https://images.unsplash.com/photo-1596634430994-3d16a4a03a89?q=80&w=1887&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1600275913172-3c8163f4e643?q=80&w=1887&auto=format&fit=crop',
     aiHint: 'window cleaning',
   },
   {
     icon: <Leaf className="h-10 w-10 text-primary" />,
     title: 'Nettoyage écologique',
     description: 'Des solutions respectueuses de l\'environnement pour un nettoyage efficace.',
-    image: 'https://images.unsplash.com/photo-1590699268393-22521f201e7e?q=80&w=1770&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1617833419398-05138332155f?q=80&w=1770&auto=format&fit=crop',
     aiHint: 'eco cleaning',
   },
 ];
