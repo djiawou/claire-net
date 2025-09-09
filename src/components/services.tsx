@@ -1,21 +1,26 @@
-import { Building2, Home, GlassWater } from 'lucide-react';
+import { Building2, Home, GlassWater, Leaf } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const servicesData = [
   {
     icon: <Building2 className="h-12 w-12 text-secondary" />,
-    title: 'Nettoyage de bureaux',
+    title: 'Nettoyage de bureaux et commerces',
     description: 'Espaces de travail professionnels, sains et accueillants pour vos employés et clients.',
   },
   {
     icon: <Home className="h-12 w-12 text-secondary" />,
-    title: 'Nettoyage de maisons',
-    description: 'Un service de nettoyage résidentiel complet pour une maison étincelante de propreté.',
+    title: 'Entretien d\'immeubles',
+    description: 'Un service de nettoyage complet pour des parties communes impeccables.',
   },
   {
     icon: <GlassWater className="h-12 w-12 text-secondary" />,
-    title: 'Entretien de vitrines',
-    description: 'Des vitres et vitrines impeccables pour une première impression parfaite de votre commerce.',
+    title: 'Lavage de vitres',
+    description: 'Des vitres et vitrines impeccables pour une première impression parfaite.',
+  },
+  {
+    icon: <Leaf className="h-12 w-12 text-secondary" />,
+    title: 'Nettoyage écologique',
+    description: 'Des solutions respectueuses de l\'environnement pour un nettoyage efficace.',
   },
 ];
 
@@ -29,7 +34,7 @@ const Services = () => {
             Des prestations de qualité adaptées à tous vos besoins en matière de propreté.
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {servicesData.map((service, index) => (
             <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>

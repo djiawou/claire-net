@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Clair&Net - Propreté garantie',
-  description: 'Services de nettoyage professionnels pour bureaux, maisons, et vitrines.',
+  title: 'Clair&Net - Société de nettoyage',
+  description: 'Propreté garantie! Nettoyage de bureaux, entretien d\'immeubles, lavage de vitres et nettoyage écologique.',
   icons: {
     icon: '/favicon.ico',
   }

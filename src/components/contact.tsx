@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Contactez-nous</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Prêt à transformer votre espace ? Demandez un devis gratuit dès aujourd'hui.
+            Prêt à transformer votre espace ? Demandez votre devis gratuit dès aujourd'hui.
           </p>
         </div>
         <div className="grid gap-12 md:grid-cols-2">
@@ -26,7 +26,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Téléphone</h4>
-                  <a href="tel:+33123456789" className="text-muted-foreground hover:text-primary transition-colors">+33 1 23 45 67 89</a>
+                  <a href="tel:0468524081" className="text-muted-foreground hover:text-primary transition-colors">0468 52 40 81</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -35,7 +35,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <a href="mailto:contact@clairnet.com" className="text-muted-foreground hover:text-primary transition-colors">contact@clairnet.com</a>
+                  <a href="mailto:info@clairnet.be" className="text-muted-foreground hover:text-primary transition-colors">info@clairnet.be</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Adresse</h4>
-                  <p className="text-muted-foreground">123 Rue de la Propreté, 75001 Paris, France</p>
+                  <p className="text-muted-foreground">Bd Cuivre et Zinc 35, 4030 Liège</p>
                 </div>
               </div>
             </div>
