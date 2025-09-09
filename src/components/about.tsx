@@ -5,10 +5,11 @@ const About = () => {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="rounded-lg overflow-hidden shadow-2xl">
             <video
-              src="https://videos.pexels.com/video-files/8140322/8140322-hd_1920_1080_25fps.mp4"
+              src="https://videos.pexels.com/video-files/4692257/4692257-hd_1920_1080_25fps.mp4"
               autoPlay
               loop
               muted
+              playsInline
               className="w-full h-full object-cover"
             >
               Votre navigateur ne supporte pas la balise vidéo.
