@@ -8,28 +8,28 @@ const servicesData = [
     title: 'Nettoyage de bureaux et commerces',
     description: 'Espaces de travail professionnels, sains et accueillants pour vos employés et clients.',
     image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1770&auto=format&fit=crop',
-    aiHint: 'commercial cleaning',
+    aiHint: 'office cleaning',
   },
   {
     icon: <Home className="h-10 w-10 text-primary" />,
     title: 'Entretien d\'immeubles',
     description: 'Un service de nettoyage complet pour des parties communes impeccables.',
     image: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1770&auto=format&fit=crop',
-    aiHint: 'apartment building',
+    aiHint: 'building maintenance',
   },
   {
     icon: <GlassWater className="h-10 w-10 text-primary" />,
     title: 'Lavage de vitres',
     description: 'Des vitres et vitrines impeccables pour une première impression parfaite.',
-    image: 'https://images.unsplash.com/photo-1600869009498-8d429f88d4f7?q=80&w=1770&auto=format&fit=crop',
+    image: 'https://picsum.photos/1770/1180',
     aiHint: 'window cleaning',
   },
   {
     icon: <Leaf className="h-10 w-10 text-primary" />,
     title: 'Nettoyage écologique',
     description: 'Des solutions respectueuses de l\'environnement pour un nettoyage efficace.',
-    image: 'https://images.unsplash.com/photo-1593113646772-6b4c342a342c?q=80&w=1770&auto=format&fit=crop',
-    aiHint: 'eco cleaning',
+    image: 'https://picsum.photos/1770/1179',
+    aiHint: 'eco friendly',
   },
 ];
 
