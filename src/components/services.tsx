@@ -4,28 +4,28 @@ import Image from 'next/image';
 
 const servicesData = [
   {
-    icon: <Building2 className="h-12 w-12 text-primary" />,
+    icon: <Building2 className="h-10 w-10 text-primary" />,
     title: 'Nettoyage de bureaux et commerces',
     description: 'Espaces de travail professionnels, sains et accueillants pour vos employés et clients.',
     image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1770&auto=format&fit=crop',
     aiHint: 'commercial cleaning',
   },
   {
-    icon: <Home className="h-12 w-12 text-primary" />,
+    icon: <Home className="h-10 w-10 text-primary" />,
     title: 'Entretien d\'immeubles',
     description: 'Un service de nettoyage complet pour des parties communes impeccables.',
     image: 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1770&auto=format&fit=crop',
     aiHint: 'apartment building',
   },
   {
-    icon: <GlassWater className="h-12 w-12 text-primary" />,
+    icon: <GlassWater className="h-10 w-10 text-primary" />,
     title: 'Lavage de vitres',
     description: 'Des vitres et vitrines impeccables pour une première impression parfaite.',
     image: 'https://images.unsplash.com/photo-1596634430994-3d16a4a03a89?q=80&w=1887&auto=format&fit=crop',
     aiHint: 'window cleaning',
   },
   {
-    icon: <Leaf className="h-12 w-12 text-primary" />,
+    icon: <Leaf className="h-10 w-10 text-primary" />,
     title: 'Nettoyage écologique',
     description: 'Des solutions respectueuses de l\'environnement pour un nettoyage efficace.',
     image: 'https://images.unsplash.com/photo-1590699268393-22521f201e7e?q=80&w=1770&auto=format&fit=crop',
@@ -45,26 +45,23 @@ const Services = () => {
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {servicesData.map((service, index) => (
-            <Card key={index} className="relative text-center shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-              <Image 
-                src={service.image} 
-                alt={service.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                data-ai-hint={service.aiHint}
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="relative h-full flex flex-col justify-center items-center text-white p-6">
-                <CardHeader>
-                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent/20 border-2 border-primary mb-4 group-hover:bg-accent/30 transition-colors">
-                    {service.icon}
-                  </div>
-                  <CardTitle className="text-xl font-semibold text-white">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">{service.description}</p>
-                </CardContent>
+            <Card key={index} className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div className="relative h-48 w-full">
+                <Image 
+                  src={service.image} 
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={service.aiHint}
+                />
               </div>
+              <CardHeader className="items-center">
+                 {service.icon}
+                <CardTitle className="mt-4 text-xl font-semibold">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <p className="text-muted-foreground">{service.description}</p>
+              </CardContent>
             </Card>
           ))}
         </div>
