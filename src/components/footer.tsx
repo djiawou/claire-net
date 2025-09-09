@@ -1,8 +1,17 @@
+"use client";
+
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 import Logo from './logo';
+import { useState, useEffect } from 'react';
 
 const Footer = () => {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -32,7 +41,7 @@ const Footer = () => {
           </nav>
         </div>
         <div className="mt-8 pt-8 border-t border-secondary-foreground/10 text-center text-sm text-secondary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Clair&Net. Tous droits réservés.</p>
+          <p>&copy; {currentYear} Clair&Net. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
