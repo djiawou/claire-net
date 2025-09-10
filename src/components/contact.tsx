@@ -44,7 +44,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Adresse</h4>
-                  <p className="text-muted-foreground">Bd Cuivre et Zinc 35, 4030 Liège</p>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Bd+Cuivre+et+Zinc+35%2C+4030+Li%C3%A8ge" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    Bd Cuivre et Zinc 35, 4030 Liège
+                  </a>
                 </div>
               </div>
             </div>
